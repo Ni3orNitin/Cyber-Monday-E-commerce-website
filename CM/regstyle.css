@@ -1,0 +1,95 @@
+/* Styling for the Register Page */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.register-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container button:hover {
+    background-color: #45a049;
+}
+
+.register-container p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-container a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 480px) {
+    .register-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .register-container h2 {
+        font-size: 20px;
+    }
+
+    .register-container label {
+        font-size: 12px;
+    }
+
+    .register-container input {
+        font-size: 14px;
+    }
+
+    .register-container button {
+        font-size: 14px;
+    }
+}

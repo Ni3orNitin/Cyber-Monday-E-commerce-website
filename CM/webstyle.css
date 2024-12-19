@@ -1,0 +1,195 @@
+/* Header Styling */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(130, 137, 154);
+    border-radius: 4px;
+}
+
+.subheader {
+    height: auto;
+    padding: 5px 10px;
+    border: solid 1px rgb(101, 85, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specific Element Adjustments */
+#searchbox {
+    width: 600px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 246);
+}
+
+#brand, #menu, #download, #register, #signin {
+    margin: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#brand, #download, #menu, #signin, #register {
+    border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #searchbox {
+        width: 100%;
+        margin: 0;
+    }
+
+    .subheader {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    #brand, #menu, #download, #register, #signin {
+        width: auto;
+        text-align: center;
+    }
+}
+
+/* Middle Content Section */
+.middle-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+.carousel-item {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 10px;
+    z-index: 10;  /* Ensure buttons are above other elements */
+}
+
+.carousel-controls .prev,
+.carousel-controls .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for buttons */
+.carousel-controls .prev:hover,
+.carousel-controls .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+    .carousel-controls .prev,
+    .carousel-controls .next {
+        padding: 8px 16px; /* Smaller padding for smaller screens */
+    }
+}
+
+/* Additional fixes for better alignment on smaller screens */
+@media (max-width: 576px) {
+    .carousel-controls {
+        padding: 0 5px; /* Reduce padding on very small screens */
+    }
+
+    .carousel-controls .prev,
+    .carousel-controls .next {
+        padding: 6px 12px; /* Further adjust button size */
+    }
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for Product Images */
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Product Description Styling */
+.product-card p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .product-card img {
+        height: 120px; /* Adjust image height for smaller screens */
+    }
+}
