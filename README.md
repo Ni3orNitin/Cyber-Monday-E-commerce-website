@@ -21,7 +21,7 @@ To run the project locally, follow these steps:
 
   1. Clone this repository to your local machine:
    
-   git clone https://github.com/yourusername/cyber-monday-website.git
+   git clone https://github.com/Ni3orNitin/cyber-monday-website.git
 
 	2.	Open the index.html file in your browser to view the website.
 
