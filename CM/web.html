@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Monday</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ02D2Rr1eF2m3Dyj3n6rTZXb0ak5jOOoBdQp8lLtnFQ4zSMe3k0p/WeZ6E5" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="webstyle.css">
-    <script src="webscript.js" defer></script>
 </head>
 <body>
 
     <!-- Header Section -->
     <header class="header">
-        <div class="subheader" id="brand">BRAND</div>
-        <div class="subheader" id="menu">Menu</div>
-        <div class="subheader" id="searchbox">
+        <div id="brand" class="subheader">BRAND</div>
+        <div id="menu" class="subheader">Menu</div>
+        <div id="searchbox" class="subheader">
             <input type="text" class="form-control" placeholder="Search Box">
         </div>
-        <div class="subheader" id="download">Download</div>
-        <div class="subheader" id="signin">Sign in</div>
-        <div class="subheader" id="register">
+        <div id="download" class="subheader">Download</div>
+        <div id="signin" class="subheader">Sign in</div>
+        <div id="register" class="subheader">
             <a href="register.html" class="btn btn-outline-light">Register</a>
+        </div>
+        <div id="profile" class="subheader">
+            <button class="btn btn-outline-primary">Profile</button>
         </div>
     </header>
 
-    <!-- Main Content Section -->
-    <main class="middle-content">
+    <!--Main Section -->
+     <main>
         <!-- Carousel Section -->
         <section class="carousel">
             <div class="carousel-item active">
@@ -43,7 +45,7 @@
                 <button class="next btn btn-primary btn-lg">❯</button>
             </div>
         </section>
-
+    
         <!-- Popular Products Section -->
         <section class="popular-products">
             <h2>Popular Products</h2>
@@ -70,7 +72,7 @@
                 </div>
             </div>
         </section>
-
+    
         <!-- Featured Products Section -->
         <section class="featured-products">
             <h2>Featured Products</h2>
@@ -97,7 +99,7 @@
                 </div>
             </div>
         </section>
-    </main>
+     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -123,7 +125,7 @@
                     <h2>Contact Us</h2>
                     <p>Email: nitin221416@gmail.com</p>
                     <p>Phone: 6207367883</p>
-                    <p>Address: Galgotia University, Gautam Buddha nagar, Greater Noida(UP)</p>
+                    <p>Address: Galgotia University, Gautam Buddha Nagar, Greater Noida (UP)</p>
                 </div>
                 <!-- Social Media Section -->
                 <div class="col-md-3 footer-section social">
@@ -144,5 +146,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="webscript.js"></script>
 </body>
 </html>
